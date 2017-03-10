@@ -29,7 +29,7 @@ For example: `http://some-service-desk-plus.org/SetUpWizard.do?forwardTo=apidoc`
 Here is a worked example:
 
 ```
-curl -k -X POST --data 'INPUT_DATA={ "operation": { "details": { "filterby": "All_Requests", "from": "0", "limit": "10" } } }'  | python -m json.tool 'https://some-service-desk-plus.org/sdpapi/request/?TECHNICIAN_KEY=xxxx-xxxx-xxxx&OPERATION_NAME=GET_REQUESTS&format=json'`
+curl -k -X POST --data 'INPUT_DATA={ "operation": { "details": { "filterby": "All_Requests", "from": "0", "limit": "10" } } }'  | python -m json.tool 'https://some-service-desk-plus.org/sdpapi/request/?TECHNICIAN_KEY=xxxx-xxxx-xxxx&OPERATION_NAME=GET_REQUESTS&format=json'
 ```
 
 This produces JSON that's usable:
